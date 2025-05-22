@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>PayPlan Pro</title>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.aun{
+    background-color: rebeccapurple;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px solid yellow;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px black;
+}
+
+#text1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: beige;
+    text-shadow: 2px 2px 5px greenyellow;
+}
+
+#text2{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 13px;
+    size: 5px;
+    color: chocolate;
+}
+
+#name{
+    text-align: center;
+    font-size: 15px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 4px goldenrod;
+    border: 5px solid yellowgreen;
+}
+
+#password{
+    text-align: center;
+    font-size: 15px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 4px goldenrod;
+    border: 5px solid yellowgreen;
+}
+
+#submit{
+    color: red;
+    background-color: aquamarine;
+    font-size: 20px;
+    border: 5px solid rgb(13, 129, 223);
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#submit:hover{
+      color: azure;
+      background-color: blue;
+      border: 5px solid rgb(189, 12, 192);
+      box-shadow: 2px 2px 4px goldenrod;
+}
+
+.container{
+    background-color: rebeccapurple;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px solid yellow;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px black;
+}
+
+#header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: beige;
+    text-shadow: 2px 2px 5px greenyellow;
+}
+
+.text{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 13px;
+    size: 5px;
+    color: chocolate;
+    margin-bottom: 2;
+}
+
+#result{
+    text-align: center;
+    background-color: azure;
+    color: green;
+    padding: 7px;
+    border: 5px solid yellow;
+    box-shadow: 4px 4px 8px black;
+}
+
+#emibutton{
+    text-align: center;
+    background-color: azure;
+    color: green;
+    padding: 7px;
+    border: 5px solid yellow;
+}
+</style>
+</head>
+<body>
+<div class="aun" id="aun">
+<h2 id="text1">Welcome to PlayPlan</h2>
+<h4 id="text2">Please login to your account</h4>
+<input type="text" placeholder="Enter your name" id="name"><br><br>
+<input type="password" placeholder="Enter your password" id="password"><br><br>
+<button id="submit" onclick="login()">Log In</button>
+</div><br>
+<div id="container" class="container">
+<h2 id="header">Get started with PayPlan pro</h2>
+<label class="text">Loan amount:</label><br>
+<input type="number" placeholder="Enter Loan amount" id="amount"><br>
+<label class="text">Enter Annual Intrerast Rate:</label><br>
+<input type="number"  placeholder="Enter Annual Intrerast Rate" id="rate"><br>
+<label class="text">Enter loan Tenure:</label><br>
+<input type="number" placeholder="Enter Annual Intrerast Rate" id="time"><br><br>
+<button id="emibutton" onclick="CalcEMI()">Calculate EMI</button>
+</div>
+<h1 id="result"></h1>
+<script>
+
+    document.getElementById("container").style.display = "none";
+    
+    function login(){
+    
+    var username = document.getElementById("name").value;
+    
+    var password = document.getElementById("password").value;
+    
+    if(username == "admin" && password == "1234" ){
+    
+    document.getElementById("aun").style.display = "none";
+    
+    document.getElementById("container").style.display = "block";
+    
+    }else{
+    
+    document.getElementById("aun").style.display = "block";
+    
+    document.getElementById("container").style.display = "none";
+    
+    alert("Invalid Username and Password!!")
+    
+    }
+    
+    }
+    
+    function CalcEMI(){
+    
+    var amount = document.getElementById("amount").value;
+    
+    var time = document.getElementById("time").value;
+    
+    var rate = document.getElementById("rate").value;
+    
+    var amount = parseInt(amount)
+    
+    var time = parseInt(time)
+    
+    var rate = parseInt(rate)
+    
+    var interest = (amount*time*rate)/100;
+    
+    var total = amount+ interest;
+    
+    var emi = total/12;
+    
+    document.getElementById("result").textContent = "Monthly EMI: "+ emi;
+    
+    }
+    
+    </script>  
+</body>
+</html>

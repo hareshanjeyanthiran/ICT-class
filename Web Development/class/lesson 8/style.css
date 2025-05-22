@@ -1,0 +1,68 @@
+h1{
+background-image: url("https://i.pinimg.com/736x/26/8f/95/268f951a25613da5efc13a4282965969.jpg");
+text-align: center;
+color: white;
+box-shadow: 5px 5px 10px black;
+background-size: auto;
+}
+.planetlist{
+
+
+    display: flex;
+    
+    gap: 60px;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    }
+    
+    ul li a{
+    
+    list-style: none;
+    
+    text-decoration: none;
+    
+    color: whitesmoke;
+    
+    font-size:22px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    ul li a:hover{
+    
+    background-color: chocolate;
+    
+    color: black;
+    
+    border-radius: 20px;
+    
+    transition:0.3s;
+    
+    padding: 10px 10px;
+    
+    }
+
+    body{
+        background-color: black;
+    }
+
+.planet{
+    color: white;
+    box-shadow: 5px salmon;
+    box-sizing: border-box red 100px;
+}
+
+.text{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.describe{
+   font-size: 25px;
+}

@@ -1,0 +1,9 @@
+h2{
+    color: violet;
+    background-color: blue;
+    text-align: center;
+    border:10px solid red;
+    height: 100px;
+     width: 200px;
+    margin: auto;
+}

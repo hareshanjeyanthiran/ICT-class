@@ -1,0 +1,27 @@
+.box{
+    color: coral;
+    background-color: blue;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 10px double red;
+    border-radius: 30px;
+    margin: auto;;
+    margin-bottom: 100px;
+    padding: 100px;
+}
+
+.box2{
+    color: red;
+    background-color: aqua;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 20px solid green;
+    border-radius: 100px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

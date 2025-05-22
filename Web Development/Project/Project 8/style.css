@@ -1,0 +1,20 @@
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/generated-image-country-road-mountains-summer-foggy-morning-nature-background-landscape-green-trees-grass-hill-330706557.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #cccccc;
+}
+
+polygon{
+    fill:rgb(0, 0, 225);
+    stroke-width: 5px;
+    stroke:rgb(225, 0, 0)
+}
+
+rect{
+    fill:rgb(0,115, 0);
+    stroke-width:10px;
+    stroke:rgb(200, 2000, 0);
+}
+    

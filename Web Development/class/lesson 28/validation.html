@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Validation</title>
+</head>
+<body>
+<center>
+<form>
+<label id="name">Enter name:</label><br>
+<input type="text" id="nameinput"><br><br>
+<label id="Phone">Enter Phone number</label><br>
+<input type="number" id="phinput"><br><br>
+<button id="Submit" onclick="Submit()">Submit</button>
+</form>
+<p id="name2"></p>
+<p id="phone2"></p>
+</center>
+<script>
+function Submit(){
+    var Name = document.getElementById("nameinput");
+    var Phone = document.getElementById("phinput");
+    if (Name == ""){
+        alert("Pleace enter valied name");
+    }
+    else if(Phone == ""){
+        alert("Pleace enter valied phone number");
+    // }else{
+    //     var name2 = document.getElementById("name2");
+    //     name2.textContent = Name;
+    //     var phone2 = document.getElementById("phone2");
+    //     phone2.textContent = Phone;
+    // }   
+
+</script>
+</body>
+</html>

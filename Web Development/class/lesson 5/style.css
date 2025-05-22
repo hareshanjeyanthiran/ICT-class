@@ -1,0 +1,13 @@
+h4{
+    color:yellowgreen;
+} 
+
+h1 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    border:10px solid red;
+    height: 100px;
+     width: 200px;
+    margin: auto;
+}

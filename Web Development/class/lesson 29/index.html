@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Carousel</title>
+</head>
+<img src="" id="image" height="100" width="200" title="my image">
+<script>
+var images = [
+
+"https://static.vecteezy.com/system/resources/previews/049/855/259/non_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg",
+
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzpUYgZ4vf3nMeoyetsX9g6Phu87WPYCszRA&s",
+
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStrOQf0jtqBTw3ig0VObtMq1MVnEzWXjhfcQ&s",
+
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ-PYgyt7fnoX_ajluAyM_BGphP4m2ULR6K4SidhjlKxf0JgHryg7RBPqPN02KQ6_jfc8&usqp=CAU",
+
+"https://static.vecteezy.com/system/resources/thumbnails/049/547/612/small/stunning-high-resolution-nature-and-landscape-backgrounds-breathtaking-scenery-in-hd-photo.jpg",
+
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiC2pnRcHIOKOxobSCfrc_leVNkHWJSorfOQ&s",
+
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3MRBY3CNpxA_zzEl8fdtwP74sASAeH6g1ZQ&s",
+
+];
+
+var myimage = document.getElementById("image")
+
+var index = 0
+
+function NextImage(){
+
+index++;
+
+myimage.src = images[index]
+
+if (index == 6){
+
+index = 0
+
+}
+
+}
+
+setInterval(NextImage,2000)
+
+NextImage()
+</script>
+</html>

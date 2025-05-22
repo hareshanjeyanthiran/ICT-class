@@ -1,0 +1,19 @@
+body { 
+    background-color: aqua;
+} 
+.text1 { 
+color: red; 
+text-decoration: overline; 
+text-align: center;
+} 
+.text2 { 
+color: #7534dc; 
+text-decoration: line-through; 
+} 
+.text3 { 
+color: rgb(70, 98, 120); 
+text-decoration: underline; 
+} 
+.text4 { 
+color: rgba(0, 0, 0, 0.4); text-decoration: underline overline; 
+}

@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Calculator</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center h-screen">
+<div class="bg-white p-6  rounded-3xl w-80 shadow-lg">
+<h1 class="text-center text-3xl font-bold mb-3">Calculator</h1>
+<input type="text" id="display" class="w-full text-right p-2 text-xl border rounded mb-4">
+<div class="grid grid-cols-4 gap-3">
+<!-- first row -->
+<button onclick="append('*')" class="bg-gray-300 text-lg font-semibold py-2 rounded">X</button>
+<button onclick="append('/')" class="bg-gray-300 text-lg font-semibold py-2 rounded">/</button>
+<button onclick="append('+')" class="bg-gray-300 text-lg font-semibold py-2 rounded">+</button>
+<!-- Second row -->
+ <button onclick="append('7')" class="bg-gray-300 text-lg font-semibold py-2 rounded">7</button>
+ <button onclick="append('8')" class="bg-gray-300 text-lg font-semibold py-2 rounded">8</button>
+ <button onclick="append('9')" class="bg-gray-300 text-lg font-semibold py-2 rounded">9</button>
+ <button onclick="append('-')" class="bg-gray-300 text-lg font-semibold py-2 rounded">-</button>
+<!-- third row -->
+ <button onclick="append('3')" class="bg-gray-300 text-lg font-semibold py-2 rounded">3</button>
+ <button onclick="append('4')" class="bg-gray-300 text-lg font-semibold py-2 rounded">4</button>
+ <button onclick="append('5')" class="bg-gray-300 text-lg font-semibold py-2 rounded">5</button>
+ <button onclick="append('6')" class="bg-gray-300 text-lg font-semibold py-2 rounded">6</button>
+ <!-- Fourth row -->
+<button onclick="append('1')" class="bg-gray-300 text-lg font-semibold py-2 rounded">1</button>
+<button onclick="append('2')" class="bg-gray-300 text-lg font-semibold py-2 rounded">2</button>
+<button onclick="calculate()" id="equal" class="bg-green-400 text-white text-lg font-semibold py-2 rounded">=</button>
+</div>
+</div>
+<script>
+var display = document.getElementById("display")
+function append(value){
+    display.value = display.value + value
+}
+function calculate(){
+    var results = eval(display.value)
+    display.value = results
+}
+</script>
+</body>
+</html>

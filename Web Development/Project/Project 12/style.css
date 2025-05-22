@@ -1,0 +1,66 @@
+.header {
+    text-align: center;
+    background-image: url("https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10px;
+}
+
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pllist{
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+
+}
+
+li{
+   list-style: none;
+}
+
+a{
+   text-decoration: none;
+   background-color: lightblue;
+   padding: 8px;
+   border-radius: 10px;
+   box-shadow: 2px 2px gray;
+}
+
+a:hover{
+   transition: 0.3s;
+   background-color: white;
+   color: black;
+}
+
+.describtion{
+   color: white;
+   display: flex;
+   gap: 10px;
+   font-size: 20px;
+}
+
+.picture{
+   border-radius: 20px;
+   padding: 10px;
+}
+
+.name{
+   color: white;
+   text-align: center;
+   font-size: 50px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.planet{
+   background-color: darkblue;
+   box-shadow: 10px 10px rgb(199, 192, 192);
+   border-radius: 30px;
+   padding-bottom: 100px;
+}

@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Driving licence Checker</title>
+<style>
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(18, 169, 220, 0.817);
+}
+
+.container{
+    text-align: center;
+    padding: 100px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 50px;
+    border-radius: 25px;
+    border: 10px solid white;
+    box-shadow: 5px 5px 10px black;
+}
+
+#header{
+    background-color: rgba(0, 123, 255, 0.747);
+    color: white;
+    border: 5px dotted rgb(0, 255, 0);
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px red;
+}
+
+img{
+    border-radius: 10px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1 id="header">Driving Licence Eligibility</h1>
+<img height="100px" width="200px" src="https://img.freepik.com/premium-vector/driver-license-icon-comic-style-id-card-cartoon-vector-illustration-white-isolated-background-identity-splash-effect-business-concept_157943-6454.jpg">
+<br><br>
+<input id="year" type="number" placeholder="Enter birth year"><br><br>
+<button id="btn" onclick="Check()">Check</button>
+<h1 id="result"></h1>
+</div>
+<script>
+    function Check(){
+    var year = document.getElementById("year").value;
+    var age = 2025-year;
+    if(age>21){
+    document.getElementById("text").textContent = "Congrats! You Are Eligible for Driving License!";
+    document.getElementById("result").style.backgroundColor = "green";
+    }else{
+    document.getElementById("text").textContent = "Sorry! You Are Not Eligible for Driving License!";
+    document.getElementById("result").style.backgroundColor = "red";
+    }
+    }
+    </script>
+</body>
+</html>

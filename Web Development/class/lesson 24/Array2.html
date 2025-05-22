@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Array mapping</title>
+</head>
+<body>
+<h1 id="items"></h1>
+<div id="box"></div>
+<script>
+var fruits = ["Apple","Guava","Banana","Avocado","Mango"]
+var it = document.getElementById("items")
+// it.textContent = fruits;
+
+var box = document.getElementById("box");
+
+fruits.forEach(function(myfruit){
+    var h1 = document.createElement("h1")
+    h1.textContent = myfruit;
+    box.appendChild(h1)
+})
+
+friends = ["Rahul","Kartik","Gab","Isam","Afroz"];
+
+friends.forEach((friends,index)=>{
+    var h2 = document.createElement("h2");
+    h2.textContent = friends+" : "+index
+    box.appendChild(h2)
+})
+</script>
+</body>
+</html>
