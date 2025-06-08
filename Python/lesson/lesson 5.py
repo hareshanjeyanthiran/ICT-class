@@ -27,7 +27,7 @@ pen.pensize(2)
 #     pen.forward(1)
 #     pen.right(1)
 
-for i in range(6):
+for i in range(100):
     pen.forward(i*5)
     pen.right(45)
 
