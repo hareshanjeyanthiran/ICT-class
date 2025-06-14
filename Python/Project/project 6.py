@@ -23,8 +23,8 @@ pen.pensize(2)
 # pen.left(120)
 # pen.forward(100)
 
-# for i in range(360):
-#     pen.forward(1)
-#     pen.right(1)
+for i in range(360):
+    pen.forward(1)
+    pen.right(1)
 
 turtle.done()
