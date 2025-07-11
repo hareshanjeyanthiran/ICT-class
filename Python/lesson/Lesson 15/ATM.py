@@ -1,3 +1,6 @@
+print("Welcome to ATM security system")
+print("Members who logged in are:")
+import time
 from tkinter import *
 screen = Tk()
 screen.geometry("500x450")
@@ -24,19 +27,19 @@ user_pin = {
     "9101": "Jileshan"
 }
 
+
+
 def on_submit():
     pin = pin_entry.get()
     if len(pin) == 4 and pin.isdigit():
         if pin in user_pin:
-            print(f"{user_pin[pin]} is logged in successfully.")
+            print(f"{user_pin[pin]} is logged in successfully  Time: {time.strftime('%Y-%m-%d %H:%M:%S')}")
             output_label.config(text=f"{user_pin[pin]} is logged in successfully.", bg="lightgreen", fg="black")
         else:
-            print("Someone entered wrong pin in the ATM.")
             output_label.config(text="Invalid PIN. Please enter a 4-digit number.",bg="red", fg="black")
+            print("A person with this PIN is not registered   pin:", pin,  "  Time:",time.strftime('%Y-%m-%d %H:%M:%S'))
 
-
-
-submit_button.config(command=on_submit)    
+submit_button.config(command=on_submit)
 
 output_label = Label(screen, text="", font=("Arial", 12), bg="gray", fg="black")
 output_label.pack(pady=10)
