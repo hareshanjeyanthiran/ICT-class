@@ -34,7 +34,7 @@ def on_submit():
     if len(pin) == 4 and pin.isdigit():
         if pin in user_pin:
             print(f"{user_pin[pin]} is logged in successfully  Time: {time.strftime('%Y-%m-%d %H:%M:%S')}")
-            output_label.config(text=f"{user_pin[pin]} is logged in successfully.", bg="lightgreen", fg="black")
+            output_label.config(text=f"Welcome {user_pin[pin]}", bg="lightgreen", fg="black")
         else:
             output_label.config(text="Invalid PIN. Please enter a 4-digit number.",bg="red", fg="black")
             print("A person with this PIN is not registered   pin:", pin,  "  Time:",time.strftime('%Y-%m-%d %H:%M:%S'))
