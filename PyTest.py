@@ -1,2 +1,2 @@
-import numpy as np
-print(np.arange(5))
+import pandas as pd
+print(pd.__version__)

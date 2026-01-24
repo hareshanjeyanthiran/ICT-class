@@ -1,6 +1,6 @@
 import numpy as np
 
-a = np.arange(9,dtype=np.float_).reshape(3,3)
+a = np.arange(9,dtype=np.float64).reshape(3,3)
 print('First array:')
 print(a)
 print('\n')
