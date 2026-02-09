@@ -24,16 +24,12 @@ df = pd.DataFrame({
     "Total Profit": total_profit
 })
 
-
-
-plt.figure()
 plt.plot(df["Month"], df["Total Profit"], linestyle=':', marker='o',linewidth=3, color='red', markerfacecolor='black')
 plt.xlabel("Month")
 plt.ylabel("Profit")
 plt.title("Company Profit Per Month")
 plt.show()
 
-plt.figure()
 plt.plot(df["Month"], df["Face Cream"], marker='o', linewidth=3, label="Face Cream")
 plt.plot(df["Month"], df["Face Wash"], marker='o', linewidth=3, label="Face Wash")
 plt.plot(df["Month"], df["Toothpaste"], marker='o', linewidth=3, label="Toothpaste")
@@ -46,10 +42,8 @@ plt.title("Monthly Sales Data of All Products")
 plt.legend()
 plt.show()
 
-plt.figure()
-bar_width = 0.4
-plt.bar(df["Month"], df["Face Cream"], width=bar_width, label="Face Cream")
-plt.bar([m + bar_width for m in df["Month"]], df["Face Wash"], width=bar_width, label="Face Wash")
+plt.bar(df["Month"], df["Face Cream"], width=0.4, label="Face Cream")
+plt.bar([m + 0.4 for m in df["Month"]], df["Face Wash"], width=0.4, label="Face Wash")
 plt.xlabel("Month")
 plt.ylabel("Sales Units")
 plt.title("Face Cream vs Face Wash Sales Per Month")
